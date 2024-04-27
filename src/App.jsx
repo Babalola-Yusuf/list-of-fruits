@@ -4,13 +4,14 @@ function App() {
   const [fruits, setFruits] = useState(["apple", "pineapple", "orange"]);
   const fruitInput = document.getElementById("fruitInput");
   const handleAddFruit=()=>{
-    setFruits([...fruits, document.getElementById("fruitInput").value])
+    setFruits([...fruits, document.getElementById("fruitInput").value]);
+    fruitInput.value ="" ;
   }
   const handleRemoveFruit=(index)=>{
 setFruits(fruits.filter((_,i) => i !== index))
   }
   return (
-    <div className=' text-center flex flex-col items-center mt-10 bg-base p-4 w-96 rounded-md border-main border-6'>
+    <div className=' text-center flex flex-col items-center mt-10 bg-base p-4 w-96 rounded-md border-main border-4'>
       <h1 className='text-6xl mb-4 text-main'>List of fruits</h1>
       <ul>
         {fruits.map((fruit, index)=> 
