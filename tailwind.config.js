@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        clifford: '#da373d',
+        base: '#9BC49A',
+        main: '#336B32',
+        softPurple: '#47326B',
+        darkPink: '#6B3249',
       }
     },
   },
