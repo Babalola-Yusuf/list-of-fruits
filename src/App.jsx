@@ -10,7 +10,7 @@ function App() {
 setFruits(fruits.filter((_,i) => i !== index))
   }
   return (
-    <div className=' text-center flex flex-col items-center mt-10 bg-base p-4 w-96 rounded-md border-main border-4'>
+    <div className=' text-center flex flex-col items-center mt-10 bg-base p-4 w-96 rounded-md border-main border-6'>
       <h1 className='text-6xl mb-4 text-main'>List of fruits</h1>
       <ul>
         {fruits.map((fruit, index)=> 
